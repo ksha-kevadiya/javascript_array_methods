@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+// Create and display a variable:
+const fruit = {type:"mango",
+ size:"50",
+ color: "yellow"
+};
+
+document.getElementById("demo").innerHTML = ("mango");
+document.getElementById("demo1").innerHTML = "The fruit type is " + fruit.type;
+document.getElementById("demo2").innerHTML =
+ "The fruit type is " + fruit.type + " The size is " + fruit.size + " and " 
+ + " The color color is " + fruit.color;
+</script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>An object method is a function definition, stored as a property value.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "kesha",
+  lastName: "kevadiya",
+ fullname: function() {
+     return this.firstName + " " + this.lastName;
+ }
+}
+
+const member = {
+  firstname: "bansri",
+  lastname: "krunal",
+};
+
+// Display data from the object:
+document.getElementById("demo").fullname = person.fullname.bind(member);
+</script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+
+<script>
+             let user = {
+            Name: "Pratik"
+        }
+
+        function mmyfun() {
+            alert(this.Name);
+
+        }
+        let funuser = mmyfun.bind(user);
+        funuser();
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The lastIndexOf() amd indexOf() Method</h2>
+
+<p>Return the position of the last occurrence of a specified text:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+        let text = "i am a 'singer' but i am 'not' dancer";
+        document.getElementById("demo2").innerHTML = text.indexOf("singer");
+        document.getElementById("demo").innerHTML = text.lastIndexOf("not");
+        document.getElementById("demo1").innerHTML = text.lastIndexOf("kesha");
+    
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The indexOf() Method</h2>
+
+<p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+<p id="demo"></p>
+
+<script>
+       var name = "my name is krunal 'and' i  am a boy";
+       document.getElementById("demo").innerHTML = name.indexOf("and",20);
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The lastIndexOf() Method</h2>
+
+<p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+       let str = "my name is 'kesha' and i am a 'girl'";
+       document.getElementById("demo").innerHTML = str.indexOf("kesha",4);
+       document.getElementById("demo1").innerHTML = str.indexOf("girl",32);
+
+</script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The search() Method</h2>
+
+<p>Return the position of the first occurrence of a string in a string:</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+
+         var myarray = "kesha, Krunal, Bansri";
+         var myarray1 = "Shrey";
+         const name = myarray.split(","); 
+         let name1 = myarray.concat(" ",myarray1);
+
+         document.getElementById("demo").innerHTML = myarray.search("Krunal");
+         document.getElementById("demo1").innerHTML = myarray[2];
+         document.getElementById("demo2").innerHTML = myarray.slice("1");
+         document.getElementById("demo3").innerHTML = name1;
+         document.getElementById("demo4").innerHTML = myarray.search(/Bansri/);
+
+</script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The match() Method</h2>
+
+<p>Perform a search for "ain":</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+
+       var text = "my name is kesha kevadiya and my name is kesha kevadiya and my name is kesha kevadiya";
+       var text1 = text.match("is");
+       var text2 = text.match(/is/g);
+       var text3 = text.match(/is/);
+       document.getElementById("demo").innerHTML = text1.length + " " + text1;
+       document.getElementById("demo1").innerHTML = text.length + " " + text2;
+       document.getElementById("demo2").innerHTML = text.length + " " + text3;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+</script>
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The includes() Method</h2>
+
+   <p>This is same type of Boolean and condition check </p>
+
+<p>Check if a string includes "world":</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+        var name = "my name is kritika and i am studing 12th standard";
+        document.getElementById("demo").innerHTML = name.includes("kritika");
+        document.getElementById("demo1").innerHTML = name.includes("kesha");
+
+</script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The startsWith() Method</h2>
+<p>Check if a string starts with "Hello":</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+
+       let str = "kesha kevadiya is a girl";
+       document.getElementById("demo").innerHTML = str.startsWith("kesha");
+       document.getElementById("demo1").innerHTML = str.startsWith("is"); 
+       document.getElementById("demo2").innerHTML = str.startsWith("kevadiya",6);
+
+       document.getElementById("demo3").innerHTML = str.endsWith("girl");
+       document.getElementById("demo4").innerHTML = str.endsWith("girl",3);
+
+</script>
+</body>
+</html>
+
+
+
+
+

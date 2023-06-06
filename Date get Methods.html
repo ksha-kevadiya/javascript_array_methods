@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Dates</h1>
+<h2>Using Date.now()</h2>
+<p>Calculate the number of years since January 1, 1970:</p>
+
+<p id="demo4"></p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
+
+<script>
+// Calculate milliseconds in a year
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+// Divide Date.now() with a year
+// let years = Math.round(Date.now() / year);
+document.getElementById("demo4").innerHTML = new Date(1268764200000);
+document.getElementById("demo").innerHTML = minute;
+document.getElementById("demo1").innerHTML = hour;
+document.getElementById("demo2").innerHTML = day;
+document.getElementById("demo3").innerHTML = years;
+</script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Dates</h1>
+<h2>The getFullYear() Method</h2>
+<p>Return the full year of a date object:</p>
+
+<p id="demo"></p>
+<p id ='demo1'></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+
+<script>
+      let a = new Date('jan 18, 2003')
+      document.getElementById('demo').innerHTML = a.getFullYear();
+
+      var b = new Date();
+      document.getElementById('demo1').innerHTML = b.getFullYear();
+
+      const c = new Date('2022 4, 23');
+      document.getElementById('demo2').innerHTML = c.getDate() + 4;
+
+      let months =
+       ['january', 'february', 'march', 'april' ,'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+
+       const d = new Date('2023-03-10');
+       let month = months[d.getMonth()];
+
+       document.getElementById('demo3').innerHTML = month;
+
+       var e = new Date('2000-01-10');
+       document.getElementById("demo4").innerHTML = " hours" + e.getHours();
+
+       let f = new Date();
+       document.getElementById("demo5").innerHTML = f.getSeconds();
+
+       const g = new Date();
+       document.getElementById('demo6').innerHTML = g.getMilliseconds();
+
+       var h = new Date();
+       document.getElementById('demo7').innerHTML = h.getMilliseconds();
+
+       let i = new Date();
+       document.getElementById('demo7').innerHTML = i.getDay();
+
+       const days = ['sunday', 'monday', 'tueday', 'wednesday', 'thursday', 'friday', 'saturday'];
+       let j = new Date();
+       var k = days[j.getDay()];
+       document.getElementById('demo8').innerHTML = k;
+
+       let l = new Date();
+       document.getElementById('demo9').innerHTML = l.getTime();
+
+       var m = new Date();
+       document.getElementById('demo10').innerHTML = m.getTimezoneOffset();
+
+</script>
+</body>
+</html>  -->
+
+
+
+

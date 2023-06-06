@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+<h2>The Number() Method</h2>
+
+<p>The Number() metod converts a variable (or value) into a number:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+
+<script>
+
+         document.getElementById("demo").innerHTML =
+         Number("3.14") + "<br>" +
+         Number(Math.PI) + "<br>" +
+         Number("    ") + "<br>" +
+         Number("") + "<br>" +
+         Number("99 88") + "<br>" +
+         Number("John") + "<br>";
+
+         let a = "4";
+         let b = + a;
+         document.getElementById("demo1").innerHTML = typeof a + '<br>' + typeof b;
+
+         let c = 123;
+         document.getElementById("demo2").innerHTML = 
+         String(c) + '<br>' +
+         String (123) + '<br>' + 
+         String (100 + 22);
+
+         document.getElementById("demo3").innerHTML = 
+         c.toString() + '<br>' +
+         (123).toString() + '<br>' + 
+         (100 + 22).toString();
+
+         let d = new Date();
+         Number(d);
+         document.getElementById("demo4").innerHTML = d;
+
+         let e = true;
+         let f = false;
+          g = Number(e)
+          h = Number(f)
+        document.getElementById('demo5').innerHTML = g;
+        document.getElementById('demo6').innerHTML = h;
+
+        var i = 5;
+        var j = 10;
+        //    k = String(i)
+        //    l = String(j)
+        document.getElementById("demo7").innerHTML = Boolean (i);
+        document.getElementById("demo8").innerHTML = Boolean (j);
+
+
+        document.getElementById("demo9").innerHTML =
+            (5 + null) + "<br>"  +
+            ("5" + null) + "<br>" +
+            ("5" + 2) + "<br>" +
+             ("5" - 2) + "<br>" +
+            ("5" * "2") + "<br>" +
+            ("5" / "2") + "<br>";
+
+            var m = false;
+            document.getElementById("demo10").innerHTML = 
+            "Number : " + Number(m) + '<br>'
+            + "String : " + String(m) + '<br>' 
+            + "Boolean : " + Boolean(m);
+
+            let n = true;
+            document.getElementById("demo11").innerHTML = 
+            "Number : " + Number(n) + '<br>'
+            + "String : " + String(n) + '<br>' 
+            + "Boolean : " + Boolean(n);
+
+            var o = true;
+            var p = false;
+
+            document.getElementById('demo12').innerHTML = Boolean(o) + " = 1" + "<br>"
+          document.getElementById('demo14').innerHTML = Boolean(p) + " = 0" + "<br>"
+
+</script> 
+</body>
+</html>

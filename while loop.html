@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+    let text = "";
+    let x = 0;
+    while (x < 10) {
+        text += "<br> The Number is " + x;   
+        x++;
+    }
+    document.getElementById("demo").innerHTML = text;
+
+
+    var name = "";
+    let txt1 = 0;
+    do {
+        txt1 += "<br> The number is " + txt1;
+        txt1++;
+    }
+     while (txt1 < 20);
+        
+    document.getElementById("demo1").innerHTML = name;
+</script>
+</body>
+</html>

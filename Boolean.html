@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>Display the value of Boolean(10 > 9):</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+<script>
+       document.getElementById("demo").innerHTML = Boolean(20 > 10);
+       document.getElementById("demo1").innerHTML = 10 > 20;
+
+       var a = 0;
+       let b = 1;
+       document.getElementById("demo2").innerHTML = Boolean(a);
+       document.getElementById("demo3").innerHTML = Boolean(b);
+
+       const c = -0;
+       let d = -2;
+       document.getElementById("demo4").innerHTML = Boolean(c);
+       document.getElementById("demo5").innerHTML = Boolean(d);
+
+       var e = ("");
+       const f = ("x");
+       document.getElementById("demo6").innerHTML = Boolean("");
+       document.getElementById("demo7").innerHTML = Boolean("x");
+
+       let g = null;
+       var h = true;
+       document.getElementById("demo8").innerHTML = Boolean(null);
+       document.getElementById("demo9").innerHTML = Boolean(x);
+
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p id="demo"></p>
+
+<script>
+           document.getElementById("demo").innerHTML =
+            "100 is " + Boolean(100) + "<br>" +
+            "3.14 is " + Boolean(3.14) + "<br>" +
+            "-15 is " + Boolean(-15) + "<br>" +
+            "Any (not empty) string is " + Boolean("Hello") + "<br>" +
+            "Even the string 'false' is " + Boolean('false') + "<br>" +
+            "Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>Booleans and Boolean objects cannot be safely compared:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+
+         let x = false;
+         let y = new Boolean(false);
+        document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+        document.getElementById("demo1").innerHTML = Boolean(x==y);
+        document.getElementById("demo2").innerHTML = Boolean(x===y);
+
+        var a = new Boolean(false);
+        var b = new Boolean(true);
+        document.getElementById("demo3").innerHTML = Boolean(a==y);
+        document.getElementById("demo4").innerHTML = Boolean(a===y);
+
+</script>
+</body>
+</html>

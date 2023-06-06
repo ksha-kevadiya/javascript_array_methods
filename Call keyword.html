@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+<p>This example calls the fullName method of person, using it on person2:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName1;
+  }
+}
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Mary",
+  lastName1: "Doe"
+}
+document.getElementById("demo").innerHTML = person.fullName.apply(person1); 
+
+var text = " ";
+text = (val) => 'kesha' + val;
+document.getElementById("demo1").innerHTML = text(' is a girl ');
+
+</script>
+</body>
+</html>

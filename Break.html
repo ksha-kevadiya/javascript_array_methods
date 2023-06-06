@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+        var a = " ";
+
+        for (let i = 0; i < 20; i++) {
+         if (i === 10) { break; }
+            a += "The number is " + i + "<br>";  
+         }
+        document.getElementById("demo").innerHTML = a;
+  
+        let b = "";
+
+        for (let i = 0; i <30; i++) {
+             if (i === 20) {  continue; }
+             b += "The number is " + i + "<br>";
+             }
+             document.getElementById("demo1").innerHTML = b;
+</script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Loops</h2>
+
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+        var text = "";
+         for(var i=0;i<25;i++){
+    if(i==15){break}
+    console.log(String.fromCharCode(i+65))
+}
+
+for(var i=0;i<25;i++){
+    if(i==15){break}
+    if(i%2==0){
+        console.log(String.fromCharCode(i+65))}
+    else{
+        console.log(String.fromCharCode(i+97))}
+}
+
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript break</h2>
+
+<p id="demo"></p>
+
+<script>
+        const name = ['kesha', 'krunal', 'bansri', 'shrey', 'yash'];
+        let text = "";
+
+        list: {
+            text += name[0] + "<br>";
+            text += name[1] + "<br>";
+            text += name[2] + "<br>";
+            break list;
+            text += name[3] + "<br>";
+            text += name[4] = "<br>";
+        }
+       document.getElementById("demo").innerHTML = text;
+
+</script>
+</body>
+</html>

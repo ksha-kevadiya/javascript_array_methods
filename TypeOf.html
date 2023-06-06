@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The typeof Operator</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+<p> <a href="javascript:(0);"></a>Uselesslink</p>
+
+<p><a href="javascript:void (document.body.style.backgroundcolor='pink');">
+
+</a> Click me to change the background color of body to red.</p>
+
+
+<script>
+
+        document.getElementById("demo").innerHTML =
+         typeof 'kesha' + '<br>' +
+        typeof 434343 + '<br>' +
+         typeof false + '<br>' + 
+         typeof null + "<br>" +
+         typeof function myfunction(){} + '<br>' +
+          typeof NaN;
+
+          document.getElementById("demo1").innerHTML =
+           'kesha'.constructor + '<br>' +
+          {name:'BMW', age:'34'}.constructor + '<br>' +
+           function myfunction(){}.constructor + '<br>' +
+          [1, 2, 3, 4].constructor + '<br>' +
+           new Date().constructor + '<br>' +
+           (3.14).constructor;
+
+           document.getElementById("demo2").innerHTML = 'kesha'.codePointAt();
+
+           var fruit = ['mango', 'apple', 'kiwi', 'cherry', 'banana'];
+           document.getElementById("demo3").innerHTML = isArray(fruit);
+
+           function isArray(myArray){  
+            return myArray.constructor.toString().indexOf('Array') < -1; 
+           }
+
+           const myDate = new Date();
+           document.getElementById("demo4").innerHTML = isDate(myDate);
+
+           function isDate(myDate) {
+               return myDate.constructor === Date;
+           } 
+
+           var cars = {name:'volvo', model:'500', color:'black'};
+           cars = NaN;
+           document.getElementById("demo5").innerHTML = typeof cars;   
+
+           document.getElementById("demo6").innerHTML =
+            typeof undefined + "<br>" +
+            typeof null + "<br><br>" +
+           (null === undefined) + "<br>" +
+           (null == undefined);
+
+        const name = ['banana', 'apple', 'kiwi', 'cherry', 'mango'];
+        document.getElementById("demo7").innerHTML = 
+        (name instanceof Array) + '<br>' +
+        (name instanceof Object) + '<br>' +
+        (name instanceof String) + '<br>' +
+        (name instanceof Number);
+
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Operators</h1>
+<h2>The void Operator</h2>
+
+<p>
+<a href="javascript:void(0);">Useless link</a>
+</p>
+
+<p>
+<a href="javascript:void(document.body.style.backgroundColor='pink');">
+Click me to change the background color.</a>
+</p>
+
+</body>
+</html>
+
+

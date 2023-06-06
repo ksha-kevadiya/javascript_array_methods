@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+  
+<button onclick="this.style.display = 'none'">Click Remove me</button>
+
+<script>
+       var person = {
+        firstname: 'kesha',
+        Lastname: 'kevadiya',
+        id: 45453,
+        fullname: function(){
+            return this.firstname + " " + this.Lastname;
+        }
+       };
+       document.getElementById("demo").innerHTML = person.fullname();
+       document.getElementById("demo1").innerHTML = person.id;
+
+       let a = this;
+       alert(a +"\n" +a+"\n" +a+"\n" +a+"\n" +a);
+          document.getElementById("demo2").innerHTML = alert;
+
+
+          function myfunction(){
+            return this;
+          }
+        document.getElementById("demo3").innerHTML = myfunction();
+
+        const fruit = {
+            firstname: 'mango',
+            lastname: 'apple',
+            id : 545354,
+            myfunction : function()     {
+                return this;
+            }
+        };
+        document.getElementById("demo4").innerHTML = fruit.myfunction();
+
+        let cars = {
+            fullcar: function(){
+                return this.firstcar + " " + this.lastcar;
+            }
+        }
+        const cars1 = {
+            firstcar : 'BMW',
+            lastcar : 'volvo',
+        }
+        var x = cars.fullcar.call(cars1);
+        document.getElementById("demo5").innerHTML = x;
+
+        let name = {
+            firstname : 'shrey',
+            lastname : 'ladani',
+            fullname : function(){
+                return this.firstname + " " + this.lastname;
+            }
+        };
+        const animal = {
+            firstname : 'lion',
+            lastname : 'tiger',
+        }
+        let fullname = name.fullname.apply(animal); 
+
+        document.getElementById("demo6").innerHTML = fullname();
+      
+</script>
+</body>
+</html>
+
+

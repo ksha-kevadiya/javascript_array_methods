@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+    var cars  = ["Kesha", "Shrey", "Bansri", "Krunal"]
+    let name = "";
+    
+    for (let i = 0; i < cars.length; i++) {
+       name += cars[i] + "<br>";
+
+       document.getElementById("demo").innerHTML = name;
+        
+    }
+
+
+    let text = "";
+
+    for (let i = 0; i <5; i++) {
+        text += "The number is " + i + "<br>";
+        
+    }
+
+    document.getElementById("demo1").innerHTML = text;
+
+
+    let fruit = ["Apple", "Mango", "Kiwi"];
+    let text1 = "";
+
+    for (let i = 0; i < 2; i++) {
+        text1 += fruit[i] + "<br>";
+        
+    }
+
+    document.getElementById("demo2").innerHTML = text1;
+
+    var x = 10;
+    for (var x = 0; x < 5; x++) {
+    
+    }
+      document.getElementById("demo3").innerHTML = x;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+
+        const name = ["kesha", "krunal", "Bansri"];
+        document.getElementById("demo").innerHTML = name;
+
+        const fruit = [
+            "mango",
+            "Apple",
+            "Kiwi",
+        ];
+
+        document.getElementById("demo1").innerHTML = fruit;
+
+        const cars = [];
+        cars[0] = "BMW";
+        cars[1] = "Volvo";
+        cars[2] = "Audi";
+
+        document.getElementById("demo2").innerHTML = cars;
+
+        const name1 = new Array("kesha", "Krunal", "Bansri");
+        document.getElementById("demo3").innerHTML = name1;
+
+        const fruit1 = ["Mango", "Apple", "Kiwi"]
+        document.getElementById("demo4").innerHTML = fruit1[0];
+
+        const cars1 = ["Volvo", "BMW", "Saab"];
+        cars1 [1] = "Audi"
+        document.getElementById("demo5").innerHTML = cars1;
+
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Arrays use numbers to access its elements.</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<P id="demo2"></P>
+<p id="demo3"></p>
+
+<script>
+
+      const name = ["kesha", "krunal", 56];
+      document.getElementById("demo").innerHTML = name[0];
+
+      const fruit = {firstname:"Mango", lastname:"Apple", Age:45};
+      document.getElementById("demo1").innerHTML = fruit.lastname;
+
+      const cars = ["Volo", "BMW", "Audi", "Saab"];
+      document.getElementById("demo2").innerHTML = cars.length;
+
+      const name1 = ["kesha", "Krunal", "Bansri", "Shrey"];
+      document.getElementById("demo3").innerHTML = name1[name1.length-1];
+
+
+</script>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+     var fruit = ["Mango", "Apple", "Kiwi"];
+     let flen = fruit.length;
+     let text = "<ul>";
+
+     for (let i = 0; i <flen; i++) {
+       text += "<li>"+ fruit[i] + "</li>";
+     }
+     text += "</ul>";
+
+     document.getElementById("demo").innerHTML = text;
+
+
+     const name = ["kesha","Krunal","Shrey","Bansri"];
+     let text1 = "<ul>";
+
+     name.forEach(myfunction);
+     text1 += "</ul>";
+
+        document.getElementById("demo1").innerHTML = text1;
+    
+     function myfunction(value){
+        text1 += "<li>" + value + "</li>";
+     }
+     
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The push method appends a new element to an array.</p>
+ 
+<button onclick="myfuntion()">Click me</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+       const cars = ["Volvo", "BMW", "Audi"];
+       document.getElementById("demo").innerHTML = cars;
+
+       function myfuntion() {
+         cars.push("Saab");
+         document.getElementById("demo").innerHTML = cars;
+       }
+
+       var name = ["kesha", "Krunal", "Bansri"];
+       name.push("Shrey");
+       document.getElementById("demo1");
+       
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+
+<p id="demo"></p>
+
+<script>
+        const fruit = ["Mango", "Apple", "Cherry"];
+        fruit[4] = "Kiwi";
+
+        var text = "";
+        var flen = fruit.length;
+        for (let i = 0; i < flen; i++) {
+           text += fruit[i] + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+    const person = [];
+    person[0] = "kesha";
+    person[1] = "kevadiya";
+    person[2] = 45;
+
+   document.getElementById("demo").innerHTML =person[0] + " " + person.length;
+
+   var fruit = [];
+   fruit ["fname"] = "Apple";
+   fruit ["fname"] = "Cherry";
+   fruit ["fname"] = "Mango";
+   document.getElementById("demo1").innerHTML = fruit[0] + " " + fruit.length; 
+
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+       let points = ["lion", 56, 100];
+       document.getElementById("demo").innerHTML = points[0];
+
+        b = "";
+       let plen = points.length;
+
+       for (let i = 0; i < plen; i++) {
+         b += points[i];
+       }
+
+       document.getElementById("demo2").innerHTML = b;
+
+       var points1 = new Array(56,78,45);
+       document.getElementById("demo1").innerHTML = points1;
+
+       let points2 = new Array(50);
+       document.getElementById("demo3").innerHTML = points2;
+</script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Array Methods</h2>
+    <h2>concat()</h2>
+    <p>The concat() method merges (concatenates) arrays:</p>
+
+    <p id="demo"></p><br>
+    <h1>Hello</h1>
+    <p class=" a"></p>
+
+    <script>
+
+        let girl = ['khushi', 'mitali', 'kesha'];
+        let boy = ['abhay', 'krunal', 'shrey'];
+        let name = girl.concat(boy);
+
+        document.getElementById("demo").innerHTML = name;
+
+        let array1 = ['tiger', 'lion', 'monkey'];
+        let array2 = ['apple', 'mango', 'kiwi'];
+        let array3 = ['kesha', 'shrey'];
+
+        let bb = array1.concat(array2,array3);
+
+        document.querySelector(".a").innerHTML = " " + bb;
+
+    </script>
+</body>
+</html>
+
